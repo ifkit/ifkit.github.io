@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--bg: #fff;
+		--fg: #000;
+
+		--a: #08f;
+		--av: #06d;
+		--ah: #F50;
+
+		--codebg: #eee;
+
+		--accbg: #000;
+		--accfg: #fff;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #252525;
+		--fg: #ccc;
+
+		--a: #5df;
+		--av: #3bd;
+		--ah: #F50;
+
+		--codebg: #333;
+
+		--accbg: #fff;
+		--accfg: #000;
+	}
+}
+
+
+body {
+	font-family: 'Work Sans', -apple-system, system-ui, sans-serif;
+	font-weight: 350;
+	font-size: 1.1em;
+	line-height: 1.6em;
+
+	background-color: var(--bg);
+	color: var(--fg);
+
+	max-width: 35em;
+	margin: 0 auto;
+	padding: 3em 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Kurale', -apple-system, system-ui, sans-serif;
+	font-style: none;
+}
+
+h1 {
+	font-size: 3.5em;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+h1 a {
+	text-decoration: none;
+	color: var(--fg);
+}
+
+a {
+	color: var(--a);
+}
+
+a:hover {
+	color: var(--ah);
+}
+
+a:visited {
+	color: var(--av);
+}
+
+.accent {
+	background-color: var(--accbg);
+	color: var(--accfg);
+	border-radius: 0.1em;
+	padding: 0 0.15em 0 0.15em;
+	margin-right: 0.1em;
+	text-decoration: none;
+}
+
+.home {
+	text-align: left;
+}
+
+.home a {
+	text-decoration: none;
+	color: var(--fg);
+}
+
+pre,
+code {
+	font-family: 'Ubuntu Mono', ui-monospace, monospace;
+	background-color: var(--codebg);
+}
+
+pre {
+	padding: 0.7em 1em;
+	border-radius: 0.5em;
+	overflow-x: auto;
+	line-height: 1.2em;
+}
+
+pre code {
+	font-size: 0.9em;
+	padding: 0;
+	font-weight: normal;
+}
+
+code {
+	padding: 0 0.2em 0 0.2em;
+	border-radius: 0.3em;
+}
+
+blockquote {
+	font-size: 1.1em;
+	margin: 0 0 0 2em;
+	border-radius: 0.3em;
+	padding: 0.2em 1em;
+	background-color: var(--codebg);
+}
